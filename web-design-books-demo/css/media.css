@@ -1,0 +1,947 @@
+/* MEDIA QUIERIES */
+
+
+
+/****************************************************************************/
+/* MOBILE VERSION */
+@media (max-width: 400px) {
+  .bar{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+  }
+
+  .dropdown li{
+
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+
+  }
+  .nav{
+    display: flex;
+
+    flex-direction: column;
+  }
+  nav li{
+    display: block;
+    color: blue;
+    padding: 3px;
+  }
+  .footer a{
+    display: block;
+  }
+  .bottomUL a{
+    display: block;
+  }
+  .footer ul li{
+    display: block;
+    justify-content: center;
+  }
+  .wrapper{
+    /*
+    Grid for the index.html page for full desktop view
+    */
+    max-width: 100%;
+
+
+    background-color: white;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 350px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo"
+    "nav"
+    "d1"
+    "h1"
+    "p1"
+    "img1"
+    "b1txt"
+    "d2"
+    "img2"
+    "b2txt"
+    "d3"
+    "img3"
+    "b3txt"
+    "d4"
+    "img4"
+    "b4txt"
+    "d5"
+    "footer"
+    "bottomUL";
+
+
+    /* "logo nav nav"
+    "d1 d1 d1"
+    "h1 h1 h1"
+    "p1 p1 p1"
+    "img1 b1txt ."
+    "d2 d2 d2"
+    "img2 b2txt ."
+    "d3 d3 d3"
+    "img3 b3txt ."
+    "d4 d4 d4"
+    "img4 b4txt ."
+    "d5 d5 d5"
+    ". footer ."
+    "bottomUL bottomUL bottomUL"; */
+
+
+  }
+  /*
+  *
+  Styling for the Home page. Desktop
+  */
+
+  .logo{
+    grid-area:logo;
+    justify-self:center;
+    width: auto;
+  }
+  .nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction:row;
+    justify-self:stretch;
+  }
+  .h1{
+
+    grid-area: h1;
+    justify-self:stretch;
+  }
+  .p1{
+    grid-area: p1;
+    justify-self:stretch;
+  }
+  .img1{
+    grid-area: img1;
+    justify-self:center;
+
+  }
+  .b1txt{
+    grid-area:b1txt;
+    justify-self:stretch;
+    padding: 10px;
+  }
+  .img2{
+    grid-area:img2;
+    justify-self:center;
+  }
+  .b2txt{
+    grid-area: b2txt;
+    justify-self:stretch;
+  }
+  .img3{
+    grid-area:img3;
+    justify-self:center;
+  }
+  .b3txt{
+    grid-area: b3txt;
+    justify-self:center;
+  }
+  .img4{
+    grid-area:img4;
+    justify-self:center;
+  }
+  .b4txt{
+      grid-area: b4txt;
+      justify-self:stretch;
+    }
+  .footer{
+      grid-area: footer;
+      justify-self:center;
+      display: block;
+  }
+  .d1{
+    grid-area: d1;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+    justify-self:center;
+  }
+  .d2{
+    grid-area: d2;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+    justify-self:center;
+  }
+  .d3{
+    grid-area: d3;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+    justify-self:center;
+  }
+  .d4{
+    grid-area: d4;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+    justify-self:center;
+  }
+  .d5{
+    grid-area: d5;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+    justify-self:center;
+  }
+  .bottomUL{
+    grid-area: bottomUL;
+    justify-self:center;
+    text-decoration: none;
+    color: blue;
+    justify-self:center;
+  }
+
+  .wrapper2{
+
+      /*
+      This is desktop version for:
+      C-Programming.html
+      HTML-and-CSS.html
+      Database.html
+      Java-Programming.html
+      */
+      margin: 7em;
+
+      background-color: white;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 350px;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "logoc"
+      "navc"
+      "d1c"
+      "h1c"
+      "p1c"
+      "img1c"
+      "dtailsc"
+      "bottomdiv"
+      "footerc"
+      "bottomULc";
+      /* "logoc . navc"
+      "d1c d1c d1c"
+      "h1c h1c h1c"
+      "img1c p1c ."
+      "dtailsc dtailsc ."
+      "bottomdiv bottomdiv bottomdiv"
+      ". footerc ."
+      "bottomULc bottomULc bottomULc"; */
+    }
+    .logoc{
+      grid-area: logoc;
+    }
+    .navc{
+      grid-area:navc;
+    }
+    .d1c{
+      grid-area: d1c;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+    }
+    .h1c{
+      grid-area:h1c;
+      justify-self:center;
+    }
+    .img1c{
+      grid-area:img1c;
+    }
+    .p1c{
+      grid-area:p1c;
+    }
+    .dtailsc{
+      grid-area: dtailsc;
+      border-width: 5px;
+      border-color: black;
+      background-color: #F5F5DC;
+    }
+    .footerc{
+      grid-area:footerc;
+    }
+    .bottomULc{
+      grid-area: bottomULc;
+      text-decoration: none;
+      color: blue;
+      justify-self:center;
+
+
+    }
+
+    .bottomdiv{
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      grid-area:bottomdiv;
+    }
+
+    .wrapper3{
+
+        /*
+        This is desktop version for:
+        contactme.html
+        */
+        margin: 7em;
+
+        background-color: white;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 350px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "logoCM"
+        "navCM"
+        "dCM"
+        "hCM"
+        "pCM"
+        "form"
+        "bottomdivCM"
+        "footerCM"
+        "bottomULCM";
+        /* "logoCM . navCM"
+        "dCM dCM dCM"
+        "hCM hCM hCM"
+        "pCM pCM pCM"
+        "form . ."
+        "bottomdivCM bottomdivCM bottomdivCM"
+        ". footerCM ."
+        "bottomULCM bottomULCM bottomULCM"; */
+      }
+      .logoCM{
+        grid-area:logoCM
+      }
+      .navCM{
+        grid-area: navCM;
+      }
+      .dCM{
+        grid-area:dCM;
+        border-top-style: solid;
+        border-width: thin;
+        border-color: blue;
+        padding: 2px;
+      }
+      .hCM{
+        grid-area: hCM;
+        justify-self:center;
+      }
+      .pCM{
+        grid-area: pCM;
+        justify-content: center;
+      }
+      .form{
+        grid-area: form;
+      }
+      .bottomdivCM{
+        grid-area: bottomdivCM;
+      }
+      .footerCM{
+        grid-area:footerCM;
+      }
+      .bottomULCM{
+        grid-area:bottomULCM;
+
+      }
+
+}
+
+
+
+
+
+/* ************************************************************************* */
+
+
+
+
+
+
+/****************************************************************************/
+/* Tablet VERSION */
+
+  @media (max-width: 450px) {
+
+    .wrapper{
+      /*
+      Grid for the index.html page for full desktop view
+      */
+      max-width: 100%;
+
+
+      background-color: white;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 350px;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "logo"
+      "nav"
+      "d1"
+      "h1"
+      "p1"
+      "img1"
+      "b1txt"
+      "d2"
+      "img2"
+      "b2txt"
+      "d3"
+      "img3"
+      "b3txt"
+      "d4"
+      "img4"
+      "b4txt"
+      "d5"
+      "footer"
+      "bottomUL";
+
+
+      /* "logo nav nav"
+      "d1 d1 d1"
+      "h1 h1 h1"
+      "p1 p1 p1"
+      "img1 b1txt ."
+      "d2 d2 d2"
+      "img2 b2txt ."
+      "d3 d3 d3"
+      "img3 b3txt ."
+      "d4 d4 d4"
+      "img4 b4txt ."
+      "d5 d5 d5"
+      ". footer ."
+      "bottomUL bottomUL bottomUL"; */
+
+
+    }
+    /*
+    *
+    Styling for the Home page. Desktop
+    */
+
+    .logo{
+      grid-area:logo;
+      justify-self:center;
+      width: auto;
+    }
+    .nav{
+      grid-area: nav;
+      display: flex;
+      flex-direction:row;
+      justify-self:stretch;
+    }
+    .h1{
+
+      grid-area: h1;
+      justify-self:stretch;
+    }
+    .p1{
+      grid-area: p1;
+      justify-self:stretch;
+    }
+    .img1{
+      grid-area: img1;
+      justify-self:center;
+
+    }
+    .b1txt{
+      grid-area:b1txt;
+      justify-self:stretch;
+      padding: 10px;
+    }
+    .img2{
+      grid-area:img2;
+      justify-self:center;
+    }
+    .b2txt{
+      grid-area: b2txt;
+      justify-self:stretch;
+    }
+    .img3{
+      grid-area:img3;
+      justify-self:center;
+    }
+    .b3txt{
+      grid-area: b3txt;
+      justify-self:center;
+    }
+    .img4{
+      grid-area:img4;
+      justify-self:center;
+    }
+    .b4txt{
+        grid-area: b4txt;
+        justify-self:stretch;
+      }
+    .footer{
+        grid-area: footer;
+        justify-self:center;
+        display: block;
+    }
+    .d1{
+      grid-area: d1;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      justify-self:center;
+    }
+    .d2{
+      grid-area: d2;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      justify-self:center;
+    }
+    .d3{
+      grid-area: d3;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      justify-self:center;
+    }
+    .d4{
+      grid-area: d4;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      justify-self:center;
+    }
+    .d5{
+      grid-area: d5;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      justify-self:center;
+    }
+    .bottomUL{
+      grid-area: bottomUL;
+      justify-self:center;
+      text-decoration: none;
+      color: blue;
+      justify-self:center;
+    }
+    .wrapper2{
+
+        /*
+        This is desktop version for:
+        C-Programming.html
+        HTML-and-CSS.html
+        Database.html
+        Java-Programming.html
+        */
+        margin: 7em;
+
+        background-color: white;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 350px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "logoc"
+        "navc"
+        "d1c"
+        "h1c"
+        "p1c"
+        "img1c"
+        "dtailsc"
+        "bottomdiv"
+        "footerc"
+        "bottomULc";
+        /* "logoc . navc"
+        "d1c d1c d1c"
+        "h1c h1c h1c"
+        "img1c p1c ."
+        "dtailsc dtailsc ."
+        "bottomdiv bottomdiv bottomdiv"
+        ". footerc ."
+        "bottomULc bottomULc bottomULc"; */
+      }
+      .logoc{
+        grid-area: logoc;
+      }
+      .navc{
+        grid-area:navc;
+      }
+      .d1c{
+        grid-area: d1c;
+        border-top-style: solid;
+        border-width: thin;
+        border-color: blue;
+      }
+      .h1c{
+        grid-area:h1c;
+        justify-self:center;
+      }
+      .img1c{
+        grid-area:img1c;
+      }
+      .p1c{
+        grid-area:p1c;
+      }
+      .dtailsc{
+        grid-area: dtailsc;
+        border-width: 5px;
+        border-color: black;
+        background-color: #F5F5DC;
+      }
+      .footerc{
+        grid-area:footerc;
+      }
+      .bottomULc{
+        grid-area: bottomULc;
+        text-decoration: none;
+        color: blue;
+        justify-self:center;
+
+
+      }
+
+      .bottomdiv{
+        border-top-style: solid;
+        border-width: thin;
+        border-color: blue;
+        grid-area:bottomdiv;
+      }
+
+      .wrapper3{
+
+          /*
+          This is desktop version for:
+          contactme.html
+          */
+          margin: 7em;
+
+          background-color: white;
+          display: grid;
+          grid-gap: 5px;
+          grid-template-columns: 350px;
+          grid-template-rows: auto;
+          grid-template-areas:
+          "logoCM"
+          "navCM"
+          "dCM"
+          "hCM"
+          "pCM"
+          "form"
+          "bottomdivCM"
+          "footerCM"
+          "bottomULCM";
+          /* "logoCM . navCM"
+          "dCM dCM dCM"
+          "hCM hCM hCM"
+          "pCM pCM pCM"
+          "form . ."
+          "bottomdivCM bottomdivCM bottomdivCM"
+          ". footerCM ."
+          "bottomULCM bottomULCM bottomULCM"; */
+        }
+        .logoCM{
+          grid-area:logoCM
+        }
+        .navCM{
+          grid-area: navCM;
+        }
+        .dCM{
+          grid-area:dCM;
+          border-top-style: solid;
+          border-width: thin;
+          border-color: blue;
+          padding: 2px;
+        }
+        .hCM{
+          grid-area: hCM;
+          justify-self:center;
+        }
+        .pCM{
+          grid-area: pCM;
+          justify-content: center;
+        }
+        .form{
+          grid-area: form;
+        }
+        .bottomdivCM{
+          grid-area: bottomdivCM;
+        }
+        .footerCM{
+          grid-area:footerCM;
+        }
+        .bottomULCM{
+          grid-area:bottomULCM;
+
+        }
+
+  }
+
+
+
+
+
+/* ************************************************************************* */
+
+
+
+/****************************************************************************/
+/* DeskTop VERSION */
+@media only screen and (min-width:700px) {
+  .wrapper{
+    /*
+    Grid for the index.html page for full desktop view
+    */
+    margin: 7em;
+
+    background-color: white;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo . nav"
+    "d1 d1 d1"
+    "h1 h1 h1"
+    "p1 p1 p1"
+    "img1 b1txt ."
+    "d2 d2 d2"
+    "img2 b2txt ."
+    "d3 d3 d3"
+    "img3 b3txt ."
+    "d4 d4 d4"
+    "img4 b4txt ."
+    "d5 d5 d5"
+    ". footer ."
+    "bottomUL bottomUL bottomUL";
+
+  }
+  /*
+  *
+  Styling for the Home page. Desktop
+  */
+  .logo{
+    grid-area:logo;
+  }
+  .nav{
+    grid-area: nav;
+  }
+  .h1{
+
+    grid-area: h1;
+    justify-self:center;
+  }
+  .p1{
+    grid-area: p1;
+  }
+  .img1{
+    grid-area: img1;
+
+  }
+  .b1txt{
+    grid-area:b1txt;
+    justify-self:stretch;
+  }
+  .img2{
+    grid-area:img2;
+  }
+  .b2txt{
+    grid-area: b2txt;
+  }
+  .img3{
+    grid-area:img3;
+  }
+  .b3txt{
+    grid-area: b3txt;
+  }
+  .img4{
+    grid-area:img4;
+  }
+  .b4txt{
+      grid-area: b4txt;
+    }
+  .footer{
+      grid-area: footer;
+      justify-self:center;
+  }
+  .d1{
+    grid-area: d1;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+  }
+  .d2{
+    grid-area: d2;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+  }
+  .d3{
+    grid-area: d3;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+  }
+  .d4{
+    grid-area: d4;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+  }
+  .d5{
+    grid-area: d5;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: blue;
+  }
+  .bottomUL{
+    grid-area: bottomUL;
+    justify-self:center;
+    text-decoration: none;
+    color: blue;
+  }
+  /*********************************************************************/
+  /* Book Details Grid Layout
+  This is desktop version for:
+  C-Programming.html
+  HTML-and-CSS.html
+  Database.html
+  Java-Programming.html
+  ***********************************************************************
+  */
+  .wrapper2{
+
+      /*
+      This is desktop version for:
+      C-Programming.html
+      HTML-and-CSS.html
+      Database.html
+      Java-Programming.html
+      */
+      margin: 7em;
+
+      background-color: white;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "logoc . navc"
+      "d1c d1c d1c"
+      "h1c h1c h1c"
+      "img1c p1c ."
+      "dtailsc dtailsc ."
+      "bottomdiv bottomdiv bottomdiv"
+      ". footerc ."
+      "bottomULc bottomULc bottomULc";
+    }
+    .logoc{
+      grid-area: logoc;
+    }
+    .navc{
+      grid-area:navc;
+    }
+    .d1c{
+      grid-area: d1c;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+    }
+    .h1c{
+      grid-area:h1c;
+      justify-self:center;
+    }
+    .img1c{
+      grid-area:img1c;
+    }
+    .p1c{
+      grid-area:p1c;
+    }
+    .dtailsc{
+      grid-area: dtailsc;
+      border-width: 5px;
+      border-color: black;
+      background-color: #F5F5DC;
+    }
+    .footerc{
+      grid-area:footerc;
+    }
+    .bottomULc{
+      grid-area: bottomULc;
+      text-decoration: none;
+      color: blue;
+      justify-self:center;
+
+
+    }
+
+    .bottomdiv{
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      grid-area:bottomdiv;
+    }
+  /**************************************************************************
+  Contact.html Grid Layout
+  ***************************************************************************/
+  .wrapper3{
+
+      /*
+      This is desktop version for:
+      contactme.html
+      */
+      margin: 7em;
+
+      background-color: white;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "logoCM . navCM"
+      "dCM dCM dCM"
+      "hCM hCM hCM"
+      "pCM pCM pCM"
+      "form . ."
+      "bottomdivCM bottomdivCM bottomdivCM"
+      ". footerCM ."
+      "bottomULCM bottomULCM bottomULCM";
+    }
+    .logoCM{
+      grid-area:logoCM
+    }
+    .navCM{
+      grid-area: navCM;
+    }
+    .dCM{
+      grid-area:dCM;
+      border-top-style: solid;
+      border-width: thin;
+      border-color: blue;
+      padding: 2px;
+    }
+    .hCM{
+      grid-area: hCM;
+      justify-self:center;
+    }
+    .pCM{
+      grid-area: pCM;
+      justify-content: center;
+    }
+    .form{
+      grid-area: form;
+    }
+    .bottomdivCM{
+      grid-area: bottomdivCM;
+    }
+    .footerCM{
+      grid-area:footerCM;
+    }
+    .bottomULCM{
+      grid-area:bottomULCM;
+
+    }
+
+
+}
+/* ************************************************************************* */
