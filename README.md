@@ -55,7 +55,7 @@ css directory- contains CSS files for the website.
 The website was tested on Chrome, FireFox, and Explorer browsers.  The website was tested on desktop, tablet, and phone size screen sizes. 
 
 ## Demonstration
-Here is a jpeg of the website.  The actual website is responsive but with github you may need to scroll to see the whole homepage.
+Here is a jpeg of the website.  For viewing full responsive features download and run entire project.
 ![alt text][logo]
 
 [logo]: https://github.com/ChrisToplikar/web-design-books-demo/blob/master/websitedemo.jpg?raw=true
